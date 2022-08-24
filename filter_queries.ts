@@ -1,5 +1,5 @@
 /** All valid filter queries of grammY */
-export interface FQ1 {
+export interface FQ {
   /** `ctx.message` */
   "message": "message",
   /** `ctx.message.text` */

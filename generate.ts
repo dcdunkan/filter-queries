@@ -56,9 +56,9 @@ await Deno.writeTextFile("generated_list.ts", listFileContent);
 console.log("List: generated_list.ts");
 
 let docFileContent =
-  `/** All valid filter queries of grammY */\nexport const fq = {\n`;
+  `/** All valid filter queries of grammY */\nexport const FQ = {\n`;
 let denoDocFile =
-  "/** All valid filter queries of grammY */\nexport interface FQ1 {\n";
+  "/** All valid filter queries of grammY */\nexport interface FQ {\n";
 
 for (const query of queries) {
   const levels = query.split(":");

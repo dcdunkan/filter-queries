@@ -1,5 +1,5 @@
 /** All valid filter queries of grammY */
-export const fq = {
+export const FQ = {
   /** `ctx.message` */
   "message": "message",
   /** `ctx.message.text` */
