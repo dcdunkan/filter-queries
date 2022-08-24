@@ -53,13 +53,13 @@ const listFileContent = `export const fq = ${
   JSON.stringify(Array.from(queries).sort())
 } as const;`;
 await Deno.writeTextFile("generated_list.ts", listFileContent);
-
 console.log("List: generated_list.ts");
 
 let docFileContent =
   `/** All valid filter queries of grammY */\nexport const fq = {\n`;
-let parallel =
+let denoDocFile =
   "/** All valid filter queries of grammY */\nexport interface FQ1 {\n";
+
 for (const query of queries) {
   const levels = query.split(":");
 
@@ -82,15 +82,14 @@ for (const query of queries) {
       : level;
   }).join(".");
 
-  docFileContent +=
-    `  /** \`ctx.${accessInfo}\` */\n  "${query}": "${query}",\n`;
-  parallel += `  /** \`ctx.${accessInfo}\` */\n  "${query}": "${query}",\n`;
+  const code = `  /** \`ctx.${accessInfo}\` */\n  "${query}": "${query}",\n`;
+  docFileContent += code;
+  denoDocFile += code;
 }
-docFileContent += `} as const;
+docFileContent += `} as const;`;
+denoDocFile += `};`;
 
-export type FQ2 = typeof fq;
-
-${parallel}};`;
-
-await Deno.writeTextFile("generated_doc2.ts", docFileContent);
+await Deno.writeTextFile("generated_doc.ts", docFileContent);
 console.log("Doc File: generated_doc.ts");
+await Deno.writeTextFile("filter_queries.ts", denoDocFile);
+console.log("Deno Doc File: filter_queries.ts");

@@ -1,5 +1,5 @@
 /** All valid filter queries of grammY */
-export const fq = {
+export interface FQ1 {
   /** `ctx.message` */
   "message": "message",
   /** `ctx.message.text` */
@@ -1380,4 +1380,4 @@ export const fq = {
   "chat_member:from:added_to_attachment_menu": "chat_member:from:added_to_attachment_menu",
   /** `ctx.chatJoinRequest` */
   "chat_join_request": "chat_join_request",
-} as const;
+};
