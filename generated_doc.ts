@@ -174,7 +174,8 @@ export const fq = {
   /** `ctx.message.new_chat_members.is_premium` */
   ":new_chat_members:is_premium": ":new_chat_members:is_premium",
   /** `ctx.message.new_chat_members.added_to_attachment_menu` */
-  ":new_chat_members:added_to_attachment_menu": ":new_chat_members:added_to_attachment_menu",
+  ":new_chat_members:added_to_attachment_menu":
+    ":new_chat_members:added_to_attachment_menu",
   /** `ctx.message.left_chat_member` */
   ":left_chat_member": ":left_chat_member",
   /** `ctx.message.left_chat_member.me` */
@@ -184,7 +185,8 @@ export const fq = {
   /** `ctx.message.left_chat_member.is_premium` */
   ":left_chat_member:is_premium": ":left_chat_member:is_premium",
   /** `ctx.message.left_chat_member.added_to_attachment_menu` */
-  ":left_chat_member:added_to_attachment_menu": ":left_chat_member:added_to_attachment_menu",
+  ":left_chat_member:added_to_attachment_menu":
+    ":left_chat_member:added_to_attachment_menu",
   /** `ctx.message.group_chat_created` */
   ":group_chat_created": ":group_chat_created",
   /** `ctx.message.supergroup_chat_created` */
@@ -342,7 +344,8 @@ export const fq = {
   /** `ctx.msg.delete_chat_photo` */
   "msg:delete_chat_photo": "msg:delete_chat_photo",
   /** `ctx.msg.message_auto_delete_timer_changed` */
-  "msg:message_auto_delete_timer_changed": "msg:message_auto_delete_timer_changed",
+  "msg:message_auto_delete_timer_changed":
+    "msg:message_auto_delete_timer_changed",
   /** `ctx.msg.pinned_message` */
   "msg:pinned_message": "msg:pinned_message",
   /** `ctx.msg.invoice` */
@@ -372,7 +375,8 @@ export const fq = {
   /** `ctx.msg.new_chat_members.is_premium` */
   "msg:new_chat_members:is_premium": "msg:new_chat_members:is_premium",
   /** `ctx.msg.new_chat_members.added_to_attachment_menu` */
-  "msg:new_chat_members:added_to_attachment_menu": "msg:new_chat_members:added_to_attachment_menu",
+  "msg:new_chat_members:added_to_attachment_menu":
+    "msg:new_chat_members:added_to_attachment_menu",
   /** `ctx.msg.left_chat_member` */
   "msg:left_chat_member": "msg:left_chat_member",
   /** `ctx.msg.left_chat_member.me` */
@@ -382,7 +386,8 @@ export const fq = {
   /** `ctx.msg.left_chat_member.is_premium` */
   "msg:left_chat_member:is_premium": "msg:left_chat_member:is_premium",
   /** `ctx.msg.left_chat_member.added_to_attachment_menu` */
-  "msg:left_chat_member:added_to_attachment_menu": "msg:left_chat_member:added_to_attachment_menu",
+  "msg:left_chat_member:added_to_attachment_menu":
+    "msg:left_chat_member:added_to_attachment_menu",
   /** `ctx.msg.group_chat_created` */
   "msg:group_chat_created": "msg:group_chat_created",
   /** `ctx.msg.supergroup_chat_created` */
@@ -492,13 +497,15 @@ export const fq = {
   /** `ctx.message.caption_entities.cashtag` */
   "message:caption_entities:cashtag": "message:caption_entities:cashtag",
   /** `ctx.message.caption_entities.bot_command` */
-  "message:caption_entities:bot_command": "message:caption_entities:bot_command",
+  "message:caption_entities:bot_command":
+    "message:caption_entities:bot_command",
   /** `ctx.message.caption_entities.url` */
   "message:caption_entities:url": "message:caption_entities:url",
   /** `ctx.message.caption_entities.email` */
   "message:caption_entities:email": "message:caption_entities:email",
   /** `ctx.message.caption_entities.phone_number` */
-  "message:caption_entities:phone_number": "message:caption_entities:phone_number",
+  "message:caption_entities:phone_number":
+    "message:caption_entities:phone_number",
   /** `ctx.message.caption_entities.bold` */
   "message:caption_entities:bold": "message:caption_entities:bold",
   /** `ctx.message.caption_entities.italic` */
@@ -506,7 +513,8 @@ export const fq = {
   /** `ctx.message.caption_entities.underline` */
   "message:caption_entities:underline": "message:caption_entities:underline",
   /** `ctx.message.caption_entities.strikethrough` */
-  "message:caption_entities:strikethrough": "message:caption_entities:strikethrough",
+  "message:caption_entities:strikethrough":
+    "message:caption_entities:strikethrough",
   /** `ctx.message.caption_entities.spoiler` */
   "message:caption_entities:spoiler": "message:caption_entities:spoiler",
   /** `ctx.message.caption_entities.code` */
@@ -516,7 +524,8 @@ export const fq = {
   /** `ctx.message.caption_entities.text_link` */
   "message:caption_entities:text_link": "message:caption_entities:text_link",
   /** `ctx.message.caption_entities.text_mention` */
-  "message:caption_entities:text_mention": "message:caption_entities:text_mention",
+  "message:caption_entities:text_mention":
+    "message:caption_entities:text_mention",
   /** `ctx.message.caption` */
   "message:caption": "message:caption",
   /** `ctx.message.sticker` */
@@ -540,7 +549,8 @@ export const fq = {
   /** `ctx.message.delete_chat_photo` */
   "message:delete_chat_photo": "message:delete_chat_photo",
   /** `ctx.message.message_auto_delete_timer_changed` */
-  "message:message_auto_delete_timer_changed": "message:message_auto_delete_timer_changed",
+  "message:message_auto_delete_timer_changed":
+    "message:message_auto_delete_timer_changed",
   /** `ctx.message.pinned_message` */
   "message:pinned_message": "message:pinned_message",
   /** `ctx.message.invoice` */
@@ -554,7 +564,8 @@ export const fq = {
   /** `ctx.message.video_chat_ended` */
   "message:video_chat_ended": "message:video_chat_ended",
   /** `ctx.message.video_chat_participants_invited` */
-  "message:video_chat_participants_invited": "message:video_chat_participants_invited",
+  "message:video_chat_participants_invited":
+    "message:video_chat_participants_invited",
   /** `ctx.message.web_app_data` */
   "message:web_app_data": "message:web_app_data",
   /** `ctx.message.forward_date` */
@@ -570,7 +581,8 @@ export const fq = {
   /** `ctx.message.new_chat_members.is_premium` */
   "message:new_chat_members:is_premium": "message:new_chat_members:is_premium",
   /** `ctx.message.new_chat_members.added_to_attachment_menu` */
-  "message:new_chat_members:added_to_attachment_menu": "message:new_chat_members:added_to_attachment_menu",
+  "message:new_chat_members:added_to_attachment_menu":
+    "message:new_chat_members:added_to_attachment_menu",
   /** `ctx.message.left_chat_member` */
   "message:left_chat_member": "message:left_chat_member",
   /** `ctx.message.left_chat_member.me` */
@@ -580,7 +592,8 @@ export const fq = {
   /** `ctx.message.left_chat_member.is_premium` */
   "message:left_chat_member:is_premium": "message:left_chat_member:is_premium",
   /** `ctx.message.left_chat_member.added_to_attachment_menu` */
-  "message:left_chat_member:added_to_attachment_menu": "message:left_chat_member:added_to_attachment_menu",
+  "message:left_chat_member:added_to_attachment_menu":
+    "message:left_chat_member:added_to_attachment_menu",
   /** `ctx.message.group_chat_created` */
   "message:group_chat_created": "message:group_chat_created",
   /** `ctx.message.supergroup_chat_created` */
@@ -740,7 +753,8 @@ export const fq = {
   /** `ctx.editedMessage.delete_chat_photo` */
   "edit:delete_chat_photo": "edit:delete_chat_photo",
   /** `ctx.editedMessage.message_auto_delete_timer_changed` */
-  "edit:message_auto_delete_timer_changed": "edit:message_auto_delete_timer_changed",
+  "edit:message_auto_delete_timer_changed":
+    "edit:message_auto_delete_timer_changed",
   /** `ctx.editedMessage.pinned_message` */
   "edit:pinned_message": "edit:pinned_message",
   /** `ctx.editedMessage.invoice` */
@@ -754,7 +768,8 @@ export const fq = {
   /** `ctx.editedMessage.video_chat_ended` */
   "edit:video_chat_ended": "edit:video_chat_ended",
   /** `ctx.editedMessage.video_chat_participants_invited` */
-  "edit:video_chat_participants_invited": "edit:video_chat_participants_invited",
+  "edit:video_chat_participants_invited":
+    "edit:video_chat_participants_invited",
   /** `ctx.editedMessage.web_app_data` */
   "edit:web_app_data": "edit:web_app_data",
   /** `ctx.editedMessage.forward_date` */
@@ -770,7 +785,8 @@ export const fq = {
   /** `ctx.editedMessage.new_chat_members.is_premium` */
   "edit:new_chat_members:is_premium": "edit:new_chat_members:is_premium",
   /** `ctx.editedMessage.new_chat_members.added_to_attachment_menu` */
-  "edit:new_chat_members:added_to_attachment_menu": "edit:new_chat_members:added_to_attachment_menu",
+  "edit:new_chat_members:added_to_attachment_menu":
+    "edit:new_chat_members:added_to_attachment_menu",
   /** `ctx.editedMessage.left_chat_member` */
   "edit:left_chat_member": "edit:left_chat_member",
   /** `ctx.editedMessage.left_chat_member.me` */
@@ -780,7 +796,8 @@ export const fq = {
   /** `ctx.editedMessage.left_chat_member.is_premium` */
   "edit:left_chat_member:is_premium": "edit:left_chat_member:is_premium",
   /** `ctx.editedMessage.left_chat_member.added_to_attachment_menu` */
-  "edit:left_chat_member:added_to_attachment_menu": "edit:left_chat_member:added_to_attachment_menu",
+  "edit:left_chat_member:added_to_attachment_menu":
+    "edit:left_chat_member:added_to_attachment_menu",
   /** `ctx.editedMessage.group_chat_created` */
   "edit:group_chat_created": "edit:group_chat_created",
   /** `ctx.editedMessage.supergroup_chat_created` */
@@ -862,7 +879,8 @@ export const fq = {
   /** `ctx.editedMessage.entities.email` */
   "edited_message:entities:email": "edited_message:entities:email",
   /** `ctx.editedMessage.entities.phone_number` */
-  "edited_message:entities:phone_number": "edited_message:entities:phone_number",
+  "edited_message:entities:phone_number":
+    "edited_message:entities:phone_number",
   /** `ctx.editedMessage.entities.bold` */
   "edited_message:entities:bold": "edited_message:entities:bold",
   /** `ctx.editedMessage.entities.italic` */
@@ -870,7 +888,8 @@ export const fq = {
   /** `ctx.editedMessage.entities.underline` */
   "edited_message:entities:underline": "edited_message:entities:underline",
   /** `ctx.editedMessage.entities.strikethrough` */
-  "edited_message:entities:strikethrough": "edited_message:entities:strikethrough",
+  "edited_message:entities:strikethrough":
+    "edited_message:entities:strikethrough",
   /** `ctx.editedMessage.entities.spoiler` */
   "edited_message:entities:spoiler": "edited_message:entities:spoiler",
   /** `ctx.editedMessage.entities.code` */
@@ -880,41 +899,56 @@ export const fq = {
   /** `ctx.editedMessage.entities.text_link` */
   "edited_message:entities:text_link": "edited_message:entities:text_link",
   /** `ctx.editedMessage.entities.text_mention` */
-  "edited_message:entities:text_mention": "edited_message:entities:text_mention",
+  "edited_message:entities:text_mention":
+    "edited_message:entities:text_mention",
   /** `ctx.editedMessage.caption_entities` */
   "edited_message:caption_entities": "edited_message:caption_entities",
   /** `ctx.editedMessage.caption_entities.mention` */
-  "edited_message:caption_entities:mention": "edited_message:caption_entities:mention",
+  "edited_message:caption_entities:mention":
+    "edited_message:caption_entities:mention",
   /** `ctx.editedMessage.caption_entities.hashtag` */
-  "edited_message:caption_entities:hashtag": "edited_message:caption_entities:hashtag",
+  "edited_message:caption_entities:hashtag":
+    "edited_message:caption_entities:hashtag",
   /** `ctx.editedMessage.caption_entities.cashtag` */
-  "edited_message:caption_entities:cashtag": "edited_message:caption_entities:cashtag",
+  "edited_message:caption_entities:cashtag":
+    "edited_message:caption_entities:cashtag",
   /** `ctx.editedMessage.caption_entities.bot_command` */
-  "edited_message:caption_entities:bot_command": "edited_message:caption_entities:bot_command",
+  "edited_message:caption_entities:bot_command":
+    "edited_message:caption_entities:bot_command",
   /** `ctx.editedMessage.caption_entities.url` */
   "edited_message:caption_entities:url": "edited_message:caption_entities:url",
   /** `ctx.editedMessage.caption_entities.email` */
-  "edited_message:caption_entities:email": "edited_message:caption_entities:email",
+  "edited_message:caption_entities:email":
+    "edited_message:caption_entities:email",
   /** `ctx.editedMessage.caption_entities.phone_number` */
-  "edited_message:caption_entities:phone_number": "edited_message:caption_entities:phone_number",
+  "edited_message:caption_entities:phone_number":
+    "edited_message:caption_entities:phone_number",
   /** `ctx.editedMessage.caption_entities.bold` */
-  "edited_message:caption_entities:bold": "edited_message:caption_entities:bold",
+  "edited_message:caption_entities:bold":
+    "edited_message:caption_entities:bold",
   /** `ctx.editedMessage.caption_entities.italic` */
-  "edited_message:caption_entities:italic": "edited_message:caption_entities:italic",
+  "edited_message:caption_entities:italic":
+    "edited_message:caption_entities:italic",
   /** `ctx.editedMessage.caption_entities.underline` */
-  "edited_message:caption_entities:underline": "edited_message:caption_entities:underline",
+  "edited_message:caption_entities:underline":
+    "edited_message:caption_entities:underline",
   /** `ctx.editedMessage.caption_entities.strikethrough` */
-  "edited_message:caption_entities:strikethrough": "edited_message:caption_entities:strikethrough",
+  "edited_message:caption_entities:strikethrough":
+    "edited_message:caption_entities:strikethrough",
   /** `ctx.editedMessage.caption_entities.spoiler` */
-  "edited_message:caption_entities:spoiler": "edited_message:caption_entities:spoiler",
+  "edited_message:caption_entities:spoiler":
+    "edited_message:caption_entities:spoiler",
   /** `ctx.editedMessage.caption_entities.code` */
-  "edited_message:caption_entities:code": "edited_message:caption_entities:code",
+  "edited_message:caption_entities:code":
+    "edited_message:caption_entities:code",
   /** `ctx.editedMessage.caption_entities.pre` */
   "edited_message:caption_entities:pre": "edited_message:caption_entities:pre",
   /** `ctx.editedMessage.caption_entities.text_link` */
-  "edited_message:caption_entities:text_link": "edited_message:caption_entities:text_link",
+  "edited_message:caption_entities:text_link":
+    "edited_message:caption_entities:text_link",
   /** `ctx.editedMessage.caption_entities.text_mention` */
-  "edited_message:caption_entities:text_mention": "edited_message:caption_entities:text_mention",
+  "edited_message:caption_entities:text_mention":
+    "edited_message:caption_entities:text_mention",
   /** `ctx.editedMessage.caption` */
   "edited_message:caption": "edited_message:caption",
   /** `ctx.editedMessage.sticker` */
@@ -938,13 +972,15 @@ export const fq = {
   /** `ctx.editedMessage.delete_chat_photo` */
   "edited_message:delete_chat_photo": "edited_message:delete_chat_photo",
   /** `ctx.editedMessage.message_auto_delete_timer_changed` */
-  "edited_message:message_auto_delete_timer_changed": "edited_message:message_auto_delete_timer_changed",
+  "edited_message:message_auto_delete_timer_changed":
+    "edited_message:message_auto_delete_timer_changed",
   /** `ctx.editedMessage.pinned_message` */
   "edited_message:pinned_message": "edited_message:pinned_message",
   /** `ctx.editedMessage.invoice` */
   "edited_message:invoice": "edited_message:invoice",
   /** `ctx.editedMessage.proximity_alert_triggered` */
-  "edited_message:proximity_alert_triggered": "edited_message:proximity_alert_triggered",
+  "edited_message:proximity_alert_triggered":
+    "edited_message:proximity_alert_triggered",
   /** `ctx.editedMessage.video_chat_scheduled` */
   "edited_message:video_chat_scheduled": "edited_message:video_chat_scheduled",
   /** `ctx.editedMessage.video_chat_started` */
@@ -952,7 +988,8 @@ export const fq = {
   /** `ctx.editedMessage.video_chat_ended` */
   "edited_message:video_chat_ended": "edited_message:video_chat_ended",
   /** `ctx.editedMessage.video_chat_participants_invited` */
-  "edited_message:video_chat_participants_invited": "edited_message:video_chat_participants_invited",
+  "edited_message:video_chat_participants_invited":
+    "edited_message:video_chat_participants_invited",
   /** `ctx.editedMessage.web_app_data` */
   "edited_message:web_app_data": "edited_message:web_app_data",
   /** `ctx.editedMessage.forward_date` */
@@ -964,25 +1001,32 @@ export const fq = {
   /** `ctx.editedMessage.new_chat_members.me` */
   "edited_message:new_chat_members:me": "edited_message:new_chat_members:me",
   /** `ctx.editedMessage.new_chat_members.is_bot` */
-  "edited_message:new_chat_members:is_bot": "edited_message:new_chat_members:is_bot",
+  "edited_message:new_chat_members:is_bot":
+    "edited_message:new_chat_members:is_bot",
   /** `ctx.editedMessage.new_chat_members.is_premium` */
-  "edited_message:new_chat_members:is_premium": "edited_message:new_chat_members:is_premium",
+  "edited_message:new_chat_members:is_premium":
+    "edited_message:new_chat_members:is_premium",
   /** `ctx.editedMessage.new_chat_members.added_to_attachment_menu` */
-  "edited_message:new_chat_members:added_to_attachment_menu": "edited_message:new_chat_members:added_to_attachment_menu",
+  "edited_message:new_chat_members:added_to_attachment_menu":
+    "edited_message:new_chat_members:added_to_attachment_menu",
   /** `ctx.editedMessage.left_chat_member` */
   "edited_message:left_chat_member": "edited_message:left_chat_member",
   /** `ctx.editedMessage.left_chat_member.me` */
   "edited_message:left_chat_member:me": "edited_message:left_chat_member:me",
   /** `ctx.editedMessage.left_chat_member.is_bot` */
-  "edited_message:left_chat_member:is_bot": "edited_message:left_chat_member:is_bot",
+  "edited_message:left_chat_member:is_bot":
+    "edited_message:left_chat_member:is_bot",
   /** `ctx.editedMessage.left_chat_member.is_premium` */
-  "edited_message:left_chat_member:is_premium": "edited_message:left_chat_member:is_premium",
+  "edited_message:left_chat_member:is_premium":
+    "edited_message:left_chat_member:is_premium",
   /** `ctx.editedMessage.left_chat_member.added_to_attachment_menu` */
-  "edited_message:left_chat_member:added_to_attachment_menu": "edited_message:left_chat_member:added_to_attachment_menu",
+  "edited_message:left_chat_member:added_to_attachment_menu":
+    "edited_message:left_chat_member:added_to_attachment_menu",
   /** `ctx.editedMessage.group_chat_created` */
   "edited_message:group_chat_created": "edited_message:group_chat_created",
   /** `ctx.editedMessage.supergroup_chat_created` */
-  "edited_message:supergroup_chat_created": "edited_message:supergroup_chat_created",
+  "edited_message:supergroup_chat_created":
+    "edited_message:supergroup_chat_created",
   /** `ctx.editedMessage.migrate_to_chat_id` */
   "edited_message:migrate_to_chat_id": "edited_message:migrate_to_chat_id",
   /** `ctx.editedMessage.migrate_from_chat_id` */
@@ -1088,37 +1132,48 @@ export const fq = {
   /** `ctx.channelPost.caption_entities` */
   "channel_post:caption_entities": "channel_post:caption_entities",
   /** `ctx.channelPost.caption_entities.mention` */
-  "channel_post:caption_entities:mention": "channel_post:caption_entities:mention",
+  "channel_post:caption_entities:mention":
+    "channel_post:caption_entities:mention",
   /** `ctx.channelPost.caption_entities.hashtag` */
-  "channel_post:caption_entities:hashtag": "channel_post:caption_entities:hashtag",
+  "channel_post:caption_entities:hashtag":
+    "channel_post:caption_entities:hashtag",
   /** `ctx.channelPost.caption_entities.cashtag` */
-  "channel_post:caption_entities:cashtag": "channel_post:caption_entities:cashtag",
+  "channel_post:caption_entities:cashtag":
+    "channel_post:caption_entities:cashtag",
   /** `ctx.channelPost.caption_entities.bot_command` */
-  "channel_post:caption_entities:bot_command": "channel_post:caption_entities:bot_command",
+  "channel_post:caption_entities:bot_command":
+    "channel_post:caption_entities:bot_command",
   /** `ctx.channelPost.caption_entities.url` */
   "channel_post:caption_entities:url": "channel_post:caption_entities:url",
   /** `ctx.channelPost.caption_entities.email` */
   "channel_post:caption_entities:email": "channel_post:caption_entities:email",
   /** `ctx.channelPost.caption_entities.phone_number` */
-  "channel_post:caption_entities:phone_number": "channel_post:caption_entities:phone_number",
+  "channel_post:caption_entities:phone_number":
+    "channel_post:caption_entities:phone_number",
   /** `ctx.channelPost.caption_entities.bold` */
   "channel_post:caption_entities:bold": "channel_post:caption_entities:bold",
   /** `ctx.channelPost.caption_entities.italic` */
-  "channel_post:caption_entities:italic": "channel_post:caption_entities:italic",
+  "channel_post:caption_entities:italic":
+    "channel_post:caption_entities:italic",
   /** `ctx.channelPost.caption_entities.underline` */
-  "channel_post:caption_entities:underline": "channel_post:caption_entities:underline",
+  "channel_post:caption_entities:underline":
+    "channel_post:caption_entities:underline",
   /** `ctx.channelPost.caption_entities.strikethrough` */
-  "channel_post:caption_entities:strikethrough": "channel_post:caption_entities:strikethrough",
+  "channel_post:caption_entities:strikethrough":
+    "channel_post:caption_entities:strikethrough",
   /** `ctx.channelPost.caption_entities.spoiler` */
-  "channel_post:caption_entities:spoiler": "channel_post:caption_entities:spoiler",
+  "channel_post:caption_entities:spoiler":
+    "channel_post:caption_entities:spoiler",
   /** `ctx.channelPost.caption_entities.code` */
   "channel_post:caption_entities:code": "channel_post:caption_entities:code",
   /** `ctx.channelPost.caption_entities.pre` */
   "channel_post:caption_entities:pre": "channel_post:caption_entities:pre",
   /** `ctx.channelPost.caption_entities.text_link` */
-  "channel_post:caption_entities:text_link": "channel_post:caption_entities:text_link",
+  "channel_post:caption_entities:text_link":
+    "channel_post:caption_entities:text_link",
   /** `ctx.channelPost.caption_entities.text_mention` */
-  "channel_post:caption_entities:text_mention": "channel_post:caption_entities:text_mention",
+  "channel_post:caption_entities:text_mention":
+    "channel_post:caption_entities:text_mention",
   /** `ctx.channelPost.caption` */
   "channel_post:caption": "channel_post:caption",
   /** `ctx.channelPost.sticker` */
@@ -1142,13 +1197,15 @@ export const fq = {
   /** `ctx.channelPost.delete_chat_photo` */
   "channel_post:delete_chat_photo": "channel_post:delete_chat_photo",
   /** `ctx.channelPost.message_auto_delete_timer_changed` */
-  "channel_post:message_auto_delete_timer_changed": "channel_post:message_auto_delete_timer_changed",
+  "channel_post:message_auto_delete_timer_changed":
+    "channel_post:message_auto_delete_timer_changed",
   /** `ctx.channelPost.pinned_message` */
   "channel_post:pinned_message": "channel_post:pinned_message",
   /** `ctx.channelPost.invoice` */
   "channel_post:invoice": "channel_post:invoice",
   /** `ctx.channelPost.proximity_alert_triggered` */
-  "channel_post:proximity_alert_triggered": "channel_post:proximity_alert_triggered",
+  "channel_post:proximity_alert_triggered":
+    "channel_post:proximity_alert_triggered",
   /** `ctx.channelPost.video_chat_scheduled` */
   "channel_post:video_chat_scheduled": "channel_post:video_chat_scheduled",
   /** `ctx.channelPost.video_chat_started` */
@@ -1156,7 +1213,8 @@ export const fq = {
   /** `ctx.channelPost.video_chat_ended` */
   "channel_post:video_chat_ended": "channel_post:video_chat_ended",
   /** `ctx.channelPost.video_chat_participants_invited` */
-  "channel_post:video_chat_participants_invited": "channel_post:video_chat_participants_invited",
+  "channel_post:video_chat_participants_invited":
+    "channel_post:video_chat_participants_invited",
   /** `ctx.channelPost.web_app_data` */
   "channel_post:web_app_data": "channel_post:web_app_data",
   /** `ctx.channelPost.forward_date` */
@@ -1224,71 +1282,98 @@ export const fq = {
   /** `ctx.editedChannelPost.entities.text_mention` */
   "edited_channel_post::text_mention": "edited_channel_post::text_mention",
   /** `ctx.editedChannelPost.entities.mention` */
-  "edited_channel_post:entities:mention": "edited_channel_post:entities:mention",
+  "edited_channel_post:entities:mention":
+    "edited_channel_post:entities:mention",
   /** `ctx.editedChannelPost.entities.hashtag` */
-  "edited_channel_post:entities:hashtag": "edited_channel_post:entities:hashtag",
+  "edited_channel_post:entities:hashtag":
+    "edited_channel_post:entities:hashtag",
   /** `ctx.editedChannelPost.entities.cashtag` */
-  "edited_channel_post:entities:cashtag": "edited_channel_post:entities:cashtag",
+  "edited_channel_post:entities:cashtag":
+    "edited_channel_post:entities:cashtag",
   /** `ctx.editedChannelPost.entities.bot_command` */
-  "edited_channel_post:entities:bot_command": "edited_channel_post:entities:bot_command",
+  "edited_channel_post:entities:bot_command":
+    "edited_channel_post:entities:bot_command",
   /** `ctx.editedChannelPost.entities.url` */
   "edited_channel_post:entities:url": "edited_channel_post:entities:url",
   /** `ctx.editedChannelPost.entities.email` */
   "edited_channel_post:entities:email": "edited_channel_post:entities:email",
   /** `ctx.editedChannelPost.entities.phone_number` */
-  "edited_channel_post:entities:phone_number": "edited_channel_post:entities:phone_number",
+  "edited_channel_post:entities:phone_number":
+    "edited_channel_post:entities:phone_number",
   /** `ctx.editedChannelPost.entities.bold` */
   "edited_channel_post:entities:bold": "edited_channel_post:entities:bold",
   /** `ctx.editedChannelPost.entities.italic` */
   "edited_channel_post:entities:italic": "edited_channel_post:entities:italic",
   /** `ctx.editedChannelPost.entities.underline` */
-  "edited_channel_post:entities:underline": "edited_channel_post:entities:underline",
+  "edited_channel_post:entities:underline":
+    "edited_channel_post:entities:underline",
   /** `ctx.editedChannelPost.entities.strikethrough` */
-  "edited_channel_post:entities:strikethrough": "edited_channel_post:entities:strikethrough",
+  "edited_channel_post:entities:strikethrough":
+    "edited_channel_post:entities:strikethrough",
   /** `ctx.editedChannelPost.entities.spoiler` */
-  "edited_channel_post:entities:spoiler": "edited_channel_post:entities:spoiler",
+  "edited_channel_post:entities:spoiler":
+    "edited_channel_post:entities:spoiler",
   /** `ctx.editedChannelPost.entities.code` */
   "edited_channel_post:entities:code": "edited_channel_post:entities:code",
   /** `ctx.editedChannelPost.entities.pre` */
   "edited_channel_post:entities:pre": "edited_channel_post:entities:pre",
   /** `ctx.editedChannelPost.entities.text_link` */
-  "edited_channel_post:entities:text_link": "edited_channel_post:entities:text_link",
+  "edited_channel_post:entities:text_link":
+    "edited_channel_post:entities:text_link",
   /** `ctx.editedChannelPost.entities.text_mention` */
-  "edited_channel_post:entities:text_mention": "edited_channel_post:entities:text_mention",
+  "edited_channel_post:entities:text_mention":
+    "edited_channel_post:entities:text_mention",
   /** `ctx.editedChannelPost.caption_entities` */
-  "edited_channel_post:caption_entities": "edited_channel_post:caption_entities",
+  "edited_channel_post:caption_entities":
+    "edited_channel_post:caption_entities",
   /** `ctx.editedChannelPost.caption_entities.mention` */
-  "edited_channel_post:caption_entities:mention": "edited_channel_post:caption_entities:mention",
+  "edited_channel_post:caption_entities:mention":
+    "edited_channel_post:caption_entities:mention",
   /** `ctx.editedChannelPost.caption_entities.hashtag` */
-  "edited_channel_post:caption_entities:hashtag": "edited_channel_post:caption_entities:hashtag",
+  "edited_channel_post:caption_entities:hashtag":
+    "edited_channel_post:caption_entities:hashtag",
   /** `ctx.editedChannelPost.caption_entities.cashtag` */
-  "edited_channel_post:caption_entities:cashtag": "edited_channel_post:caption_entities:cashtag",
+  "edited_channel_post:caption_entities:cashtag":
+    "edited_channel_post:caption_entities:cashtag",
   /** `ctx.editedChannelPost.caption_entities.bot_command` */
-  "edited_channel_post:caption_entities:bot_command": "edited_channel_post:caption_entities:bot_command",
+  "edited_channel_post:caption_entities:bot_command":
+    "edited_channel_post:caption_entities:bot_command",
   /** `ctx.editedChannelPost.caption_entities.url` */
-  "edited_channel_post:caption_entities:url": "edited_channel_post:caption_entities:url",
+  "edited_channel_post:caption_entities:url":
+    "edited_channel_post:caption_entities:url",
   /** `ctx.editedChannelPost.caption_entities.email` */
-  "edited_channel_post:caption_entities:email": "edited_channel_post:caption_entities:email",
+  "edited_channel_post:caption_entities:email":
+    "edited_channel_post:caption_entities:email",
   /** `ctx.editedChannelPost.caption_entities.phone_number` */
-  "edited_channel_post:caption_entities:phone_number": "edited_channel_post:caption_entities:phone_number",
+  "edited_channel_post:caption_entities:phone_number":
+    "edited_channel_post:caption_entities:phone_number",
   /** `ctx.editedChannelPost.caption_entities.bold` */
-  "edited_channel_post:caption_entities:bold": "edited_channel_post:caption_entities:bold",
+  "edited_channel_post:caption_entities:bold":
+    "edited_channel_post:caption_entities:bold",
   /** `ctx.editedChannelPost.caption_entities.italic` */
-  "edited_channel_post:caption_entities:italic": "edited_channel_post:caption_entities:italic",
+  "edited_channel_post:caption_entities:italic":
+    "edited_channel_post:caption_entities:italic",
   /** `ctx.editedChannelPost.caption_entities.underline` */
-  "edited_channel_post:caption_entities:underline": "edited_channel_post:caption_entities:underline",
+  "edited_channel_post:caption_entities:underline":
+    "edited_channel_post:caption_entities:underline",
   /** `ctx.editedChannelPost.caption_entities.strikethrough` */
-  "edited_channel_post:caption_entities:strikethrough": "edited_channel_post:caption_entities:strikethrough",
+  "edited_channel_post:caption_entities:strikethrough":
+    "edited_channel_post:caption_entities:strikethrough",
   /** `ctx.editedChannelPost.caption_entities.spoiler` */
-  "edited_channel_post:caption_entities:spoiler": "edited_channel_post:caption_entities:spoiler",
+  "edited_channel_post:caption_entities:spoiler":
+    "edited_channel_post:caption_entities:spoiler",
   /** `ctx.editedChannelPost.caption_entities.code` */
-  "edited_channel_post:caption_entities:code": "edited_channel_post:caption_entities:code",
+  "edited_channel_post:caption_entities:code":
+    "edited_channel_post:caption_entities:code",
   /** `ctx.editedChannelPost.caption_entities.pre` */
-  "edited_channel_post:caption_entities:pre": "edited_channel_post:caption_entities:pre",
+  "edited_channel_post:caption_entities:pre":
+    "edited_channel_post:caption_entities:pre",
   /** `ctx.editedChannelPost.caption_entities.text_link` */
-  "edited_channel_post:caption_entities:text_link": "edited_channel_post:caption_entities:text_link",
+  "edited_channel_post:caption_entities:text_link":
+    "edited_channel_post:caption_entities:text_link",
   /** `ctx.editedChannelPost.caption_entities.text_mention` */
-  "edited_channel_post:caption_entities:text_mention": "edited_channel_post:caption_entities:text_mention",
+  "edited_channel_post:caption_entities:text_mention":
+    "edited_channel_post:caption_entities:text_mention",
   /** `ctx.editedChannelPost.caption` */
   "edited_channel_post:caption": "edited_channel_post:caption",
   /** `ctx.editedChannelPost.sticker` */
@@ -1310,31 +1395,40 @@ export const fq = {
   /** `ctx.editedChannelPost.new_chat_photo` */
   "edited_channel_post:new_chat_photo": "edited_channel_post:new_chat_photo",
   /** `ctx.editedChannelPost.delete_chat_photo` */
-  "edited_channel_post:delete_chat_photo": "edited_channel_post:delete_chat_photo",
+  "edited_channel_post:delete_chat_photo":
+    "edited_channel_post:delete_chat_photo",
   /** `ctx.editedChannelPost.message_auto_delete_timer_changed` */
-  "edited_channel_post:message_auto_delete_timer_changed": "edited_channel_post:message_auto_delete_timer_changed",
+  "edited_channel_post:message_auto_delete_timer_changed":
+    "edited_channel_post:message_auto_delete_timer_changed",
   /** `ctx.editedChannelPost.pinned_message` */
   "edited_channel_post:pinned_message": "edited_channel_post:pinned_message",
   /** `ctx.editedChannelPost.invoice` */
   "edited_channel_post:invoice": "edited_channel_post:invoice",
   /** `ctx.editedChannelPost.proximity_alert_triggered` */
-  "edited_channel_post:proximity_alert_triggered": "edited_channel_post:proximity_alert_triggered",
+  "edited_channel_post:proximity_alert_triggered":
+    "edited_channel_post:proximity_alert_triggered",
   /** `ctx.editedChannelPost.video_chat_scheduled` */
-  "edited_channel_post:video_chat_scheduled": "edited_channel_post:video_chat_scheduled",
+  "edited_channel_post:video_chat_scheduled":
+    "edited_channel_post:video_chat_scheduled",
   /** `ctx.editedChannelPost.video_chat_started` */
-  "edited_channel_post:video_chat_started": "edited_channel_post:video_chat_started",
+  "edited_channel_post:video_chat_started":
+    "edited_channel_post:video_chat_started",
   /** `ctx.editedChannelPost.video_chat_ended` */
-  "edited_channel_post:video_chat_ended": "edited_channel_post:video_chat_ended",
+  "edited_channel_post:video_chat_ended":
+    "edited_channel_post:video_chat_ended",
   /** `ctx.editedChannelPost.video_chat_participants_invited` */
-  "edited_channel_post:video_chat_participants_invited": "edited_channel_post:video_chat_participants_invited",
+  "edited_channel_post:video_chat_participants_invited":
+    "edited_channel_post:video_chat_participants_invited",
   /** `ctx.editedChannelPost.web_app_data` */
   "edited_channel_post:web_app_data": "edited_channel_post:web_app_data",
   /** `ctx.editedChannelPost.forward_date` */
   "edited_channel_post:forward_date": "edited_channel_post:forward_date",
   /** `ctx.editedChannelPost.is_automatic_forward` */
-  "edited_channel_post:is_automatic_forward": "edited_channel_post:is_automatic_forward",
+  "edited_channel_post:is_automatic_forward":
+    "edited_channel_post:is_automatic_forward",
   /** `ctx.editedChannelPost.channel_chat_created` */
-  "edited_channel_post:channel_chat_created": "edited_channel_post:channel_chat_created",
+  "edited_channel_post:channel_chat_created":
+    "edited_channel_post:channel_chat_created",
   /** `ctx.inlineQuery` */
   "inline_query": "inline_query",
   /** `ctx.chosenInlineResult` */
@@ -1364,7 +1458,8 @@ export const fq = {
   /** `ctx.myChatMember.from.is_premium` */
   "my_chat_member:from:is_premium": "my_chat_member:from:is_premium",
   /** `ctx.myChatMember.from.added_to_attachment_menu` */
-  "my_chat_member:from:added_to_attachment_menu": "my_chat_member:from:added_to_attachment_menu",
+  "my_chat_member:from:added_to_attachment_menu":
+    "my_chat_member:from:added_to_attachment_menu",
   /** `ctx.chatMember` */
   "chat_member": "chat_member",
   /** `ctx.chatMember.from` */
@@ -1376,7 +1471,10 @@ export const fq = {
   /** `ctx.chatMember.from.is_premium` */
   "chat_member:from:is_premium": "chat_member:from:is_premium",
   /** `ctx.chatMember.from.added_to_attachment_menu` */
-  "chat_member:from:added_to_attachment_menu": "chat_member:from:added_to_attachment_menu",
+  "chat_member:from:added_to_attachment_menu":
+    "chat_member:from:added_to_attachment_menu",
   /** `ctx.chatJoinRequest` */
   "chat_join_request": "chat_join_request",
 } as const;
+
+type FQ = typeof fq;
