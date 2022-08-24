@@ -1477,4 +1477,4 @@ export const fq = {
   "chat_join_request": "chat_join_request",
 } as const;
 
-type FQ = typeof fq;
+export type FQ = typeof fq;
