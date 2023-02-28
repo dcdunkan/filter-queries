@@ -1,0 +1,22 @@
+name: Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */8 * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Update
+        run: deno task prepare
