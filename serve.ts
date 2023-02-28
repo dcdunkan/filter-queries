@@ -26,6 +26,8 @@ serve(() => {
 <head>
   <title>Filter Queries</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Filter Queries">
+  <meta name="description" content="Browse and visualise all valid filter queries of the grammY Telegram bot framework!">
   <style>
 #query {
   width: 100%;
