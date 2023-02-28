@@ -42,7 +42,7 @@ or from their corresponding shortcuts:
     } else if (l1[0] && l2[0] && !l3) { // message:text
     
       info = `\
-Filter query for listening to ${l1text} update${(l1)} containing the ${l2text} field${s(l2)}. \
+Filter query for listening to ${l1text} update${s(l1)} containing the ${l2text} field${s(l2)}. \
 The field or its properties can be accessed like:
 <ul>${l1.map((k1) => l2.map((k2) => li(code(`ctx.update.${k1}.${k2}`))).join("\n")).join("\n")}</ul>
 
