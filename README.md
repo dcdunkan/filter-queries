@@ -1,5 +1,5 @@
-A tool to browse all valid filter queries of grammY.
-Consider contributing to how docs are auto generated and design.
+A tool to browse all valid filter queries of grammY. Consider contributing to
+how docs are auto generated and design.
 
 See live at: https://fqs.deno.dev
 

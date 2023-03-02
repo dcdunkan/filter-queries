@@ -13,18 +13,18 @@ export const UPDATE_KEYS = [
   "my_chat_member",
   "chat_member",
   "chat_join_request",
-] as const;
+];
 
 export const L1_SHORTCUTS = {
   "": ["message", "channel_post"],
-  msg: ["message", "channel_post"],
-  edit: ["edited_message", "edited_channel_post"],
-} as const;
+  "msg": ["message", "channel_post"],
+  "edit": ["edited_message", "edited_channel_post"],
+};
 
 export const L2_SHORTCUTS = {
   "": ["entities", "caption_entities"],
-  media: ["photo", "video"],
-  file: [
+  "media": ["photo", "video"],
+  "file": [
     "photo",
     "animation",
     "audio",
@@ -34,4 +34,4 @@ export const L2_SHORTCUTS = {
     "voice",
     "sticker",
   ],
-} as const;
+};

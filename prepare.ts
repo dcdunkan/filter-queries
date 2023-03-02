@@ -1,91 +1,63 @@
-import { join } from "https://deno.land/std@0.178.0/path/mod.ts";
 import {
   Project,
   PropertyAssignment,
+  SourceFile,
+  StringLiteral,
   SyntaxKind,
 } from "https://deno.land/x/ts_morph@17.0.1/mod.ts";
 
-const temp = await Deno.makeTempDir();
-const clone = await run(
-  ["git", "clone", "https://github.com/grammyjs/grammY"],
-  temp,
-);
-if (!clone.success) throw new Error("Failed to clone grammjs/grammY");
-const { stdout: revision } = await run([
-  "git",
-  "rev-list",
-  "--tags",
-  "--max-count=1",
-], join(temp, "grammY"));
-const tags = await run(
-  ["git", "describe", "--tags", revision.trim()],
-  join(temp, "grammY"),
-);
-if (!tags.success) throw new Error("Failed to get tags");
-
-const LATEST_VERSION = tags.stdout.trim();
-let currentVersion = "";
-try {
-  const module = await import("./mod.ts");
-  currentVersion = module.GRAMMY_VERSION;
-} catch (_err) {
-  // whatever
+function getPropertiesOfObject(source: SourceFile, key: string) {
+  return source.getVariableDeclarationOrThrow(key)
+    .getInitializerIfKindOrThrow(SyntaxKind.AsExpression)
+    .getExpressionIfKindOrThrow(SyntaxKind.ObjectLiteralExpression)
+    .getProperties() as PropertyAssignment[];
 }
 
-if (currentVersion === LATEST_VERSION) {
-  await Deno.remove(temp, { recursive: true });
-  Deno.exit(0);
+function getObject(source: SourceFile, key: string) {
+  return getPropertiesOfObject(source, key).reduce((properties, property) => {
+    const propertyNameKind = property.getNameNode().getKind();
+    const propertyName = propertyNameKind === SyntaxKind.Identifier
+      ? property.getName()
+      : property.getNameNode()
+        .asKindOrThrow(SyntaxKind.StringLiteral)
+        .getLiteralText();
+    const value = property.getInitializerIfKindOrThrow(
+      SyntaxKind.ArrayLiteralExpression,
+    ).getElements().map((element) => {
+      return (element as StringLiteral).getLiteralText();
+    });
+    return { ...properties, [propertyName]: value };
+  }, {});
 }
 
-const FILTERS_TS_FILE = join(temp, "grammY/src/filter.ts");
+type Shortcuts = Record<string, string[]>;
 
+// redirects to latest version of grammY = up to date filter queries.
+const response = await fetch("https://deno.land/x/grammy/filter.ts");
+if (!response.ok) {
+  console.log(response);
+  throw new Error("Request failed");
+}
+
+const filterFileContent = await response.text();
 const project = new Project();
-const source = project.addSourceFileAtPath(FILTERS_TS_FILE);
+// NOTE: ts_morph doesn't resolve the imports in the filter.ts file because, currently
+// FilterQuery and other local variables are independent of those relative imports.
+// This logic needs to be changed if this isn't the situation in the future.
+const source = project.createSourceFile(".filter.ts", filterFileContent);
 
-const filterDepsFile = `\
-export const UPDATE_KEYS = ${
-  JSON.stringify(
-    (source.getVariableDeclarationOrThrow("UPDATE_KEYS"))
-      .getInitializerIfKindOrThrow(SyntaxKind.AsExpression)
-      .getExpressionIfKindOrThrow(SyntaxKind.ObjectLiteralExpression)
-      .getProperties().map((prop) => (prop as PropertyAssignment).getName()),
-    null,
-    2,
-  )
-} as const;
+const UPDATE_KEYS = getPropertiesOfObject(source, "UPDATE_KEYS")
+  .map((property) => property.getName()) as string[];
+const L1_SHORTCUTS = getObject(source, "L1_SHORTCUTS") as Shortcuts;
+const L2_SHORTCUTS = getObject(source, "L2_SHORTCUTS") as Shortcuts;
+const FILTER_QUERIES = source.getTypeAliasOrThrow("FilterQuery")
+  .getType().getUnionTypes().map((u) => u.getLiteralValue()) as string[];
 
-export const ${source.getVariableDeclarationOrThrow("L1_SHORTCUTS").getText()};
-
-export const ${
-  source.getVariableDeclarationOrThrow("L2_SHORTCUTS").getText()
-};\n`;
-
-await Deno.writeTextFile("./filter.ts", filterDepsFile);
-
-const filterQueries = source
-  .getTypeAliasOrThrow("FilterQuery")
-  .getType().getUnionTypes()
-  .map((u) => u.getLiteralValue()) as string[];
-
-await Deno.remove(temp, { recursive: true });
-
-const stringified = `${JSON.stringify(filterQueries, null, 2)}\n`;
-
-const modFile = `// Last updated: ${new Date().toISOString()}
-export const GRAMMY_VERSION = "${LATEST_VERSION}";
-export default ${stringified.trim()};\n`;
+const modFile = `export default ${JSON.stringify(FILTER_QUERIES)};`;
+const filterFile = `
+export const UPDATE_KEYS = ${JSON.stringify(UPDATE_KEYS)};\n
+export const L1_SHORTCUTS = ${JSON.stringify(L1_SHORTCUTS)};\n
+export const L2_SHORTCUTS = ${JSON.stringify(L2_SHORTCUTS)};\n`;
 
 await Deno.writeTextFile("./mod.ts", modFile);
-await Deno.mkdir("./versions");
-await Deno.writeTextFile(`./versions/${LATEST_VERSION}.json`, stringified);
-
-async function run(cmd: string[], cwd: string) {
-  const process = Deno.run({ cwd, cmd, stdout: "piped" });
-  const [status, stdout] = await Promise.all([
-    process.status(),
-    process.output(),
-  ]);
-  process.close();
-  const decoder = new TextDecoder();
-  return { ...status, stdout: decoder.decode(stdout) };
-}
+await Deno.writeTextFile("./filter.ts", filterFile);

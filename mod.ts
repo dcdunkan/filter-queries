@@ -1,5 +1,3 @@
-// Last updated: 2023-02-27T23:46:48.570Z
-export const GRAMMY_VERSION = "v1.14.1";
 export default [
   "message",
   "edited_message",
