@@ -1,5 +1,6 @@
 /** @jsx h */
-import { h, JSX } from "https://deno.land/x/htm@0.1.4/mod.ts";
+/** @jsxFrag Fragment */
+import { h, JSX, Fragment } from "https://deno.land/x/htm@0.1.4/mod.ts";
 import FILTER_QUERIES from "./mod.ts";
 import { L1_SHORTCUTS, L2_SHORTCUTS, UPDATE_KEYS } from "./filter.ts";
 
@@ -42,18 +43,10 @@ export function generate() {
 
     // L1T means L1Text or textual representation of L1.
     const L1T = (
-      <span
-        dangerouslySetInnerHTML={{
-          __html: `<code>${L1.join("</code> / <code>")}</code>`,
-        }}
-      />
+      <span>{L1.map((k1, i) => <>{!i ? "": " / "}<code>{k1}</code></>)}</span>
     );
     const L2T = (
-      <span
-        dangerouslySetInnerHTML={{
-          __html: `<code>${L2.join("</code> / <code>")}</code>`,
-        }}
-      />
+      <span>{L2.map((k2, i) => <>{!i ? "": " / "}<code>{k2}</code></>)}</span>
     );
     const L3T = <code>{L3}</code>;
 
