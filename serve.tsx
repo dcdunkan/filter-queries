@@ -62,14 +62,7 @@ serve(() => {
       }
     `],
     scripts: [
-      `
-      window.onload = function () {
-        var searchBox = document.getElementById("query");
-        searchBox.addEventListener("keyup", function (event) {
-          searchBox.value = "oeo"
-          event.target.value = event.target.value.toLowerCase();
-        }
-      }`,
+      // TODO: Implement search function
     ],
     body: (
       <div class="m-8 max-w-screen-sm h-full">
